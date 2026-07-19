@@ -35,7 +35,7 @@ jobs:
         
     - name: Push docker image
       run : |
-        docker push overrun01/docker-graphql:0.0.2 .
+        docker push overrun01/docker-graphql:0.0.2 
 
     
     
