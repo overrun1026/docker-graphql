@@ -28,6 +28,18 @@ jobs:
          echo "Iniciando login"
          docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD" 
          echo "Finalizando login"
+
+    - name: Build docker image
+      run : |
+        docker build -t overrun01/docker-graphql:0.0.2 .
+        
+    - name: Push docker image
+      run : |
+        docker push overrun01/docker-graphql:0.0.2 .
+
+    
+    
+      
             
         
 
